@@ -1,8 +1,8 @@
 .rows {
   display: flex;
-  justify-content: flex-end; /* Justify the button to the end of the container */
-  align-items: center; /* Align items vertically in the center */
-  padding-right: 4em;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 4em; /* Adjust padding as needed */
   padding-top: 3em;
   padding-bottom: 2em;
 }
@@ -13,17 +13,29 @@
 }
 
 .btn svg {
-  width: 1em; /* Adjust the size as needed */
-  height: 1em; /* Adjust the size as needed */
-  margin-right: 5px; /* Adjust the spacing between the icon and text */
+  width: 1em;
+  height: 1em;
+  margin-right: 5px;
 }
 
+.resource {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
-.astericSign{
-	color: #f90000;
-	margin-left: -2px;
-	vertical-align: super;
-	font-size: 10px;
+/* Media Query for responsiveness */
+@media screen and (max-width: 768px) {
+  .rows {
+    padding: 3em; /* Adjust padding for smaller screens */
+  }
+}
+
+.astericSign {
+  color: #f90000;
+  margin-left: -2px;
+  vertical-align: super;
+  font-size: 10px;
 }
 .resource {
   white-space: nowrap; /* Prevent the text from breaking into multiple lines */
@@ -77,10 +89,10 @@
   border-color: #2e40d4;
 }
 
-.updateBtn{
-	display: flex;
-	text-align: center;
-	justify-content: center;
+.updateBtn {
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 .form-group {
